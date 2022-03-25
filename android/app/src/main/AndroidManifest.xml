@@ -1,12 +1,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="chat.rocket.reactnative">
+    package="com.avian.chat">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
-        android:name="chat.rocket.reactnative.MainApplication"
+        android:name="com.avian.chat.MainApplication"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -24,7 +24,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="chat.rocket.reactnative.MainActivity"
+            android:name="com.avian.chat.MainActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
             android:exported="true"
             android:label="@string/app_name"
@@ -57,7 +57,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="chat.rocket.reactnative.share.ShareActivity"
+            android:name="com.avian.chat.share.ShareActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:label="@string/share_extension_name"
             android:noHistory="true"

@@ -126,7 +126,7 @@ commands:
               echo -e "KEY_ALIAS=$CHAT_ROCKET_ANDROID_KEY_ALIAS" >> ./gradle.properties
               echo -e "KEY_PASSWORD=$CHAT_ROCKET_ANDROID_KEY_PASSWORD" >> ./gradle.properties
             else
-              echo -e "APPLICATION_ID=chat.rocket.reactnative" >> ./gradle.properties
+              echo -e "APPLICATION_ID=com.avian.chat" >> ./gradle.properties
               echo -e "BugsnagAPIKey=$BUGSNAG_KEY" >> ./gradle.properties
               echo $KEYSTORE_BASE64 | base64 --decode > ./app/$KEYSTORE
               echo -e "KEYSTORE=$KEYSTORE" >> ./gradle.properties
