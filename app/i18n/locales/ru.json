@@ -702,7 +702,7 @@
   "Direct_message": "Личное сообщение",
   "Message_Ignored": "Сообщение игнорируется. Тапните по нему, чтобы отобразить его.",
   "Enter_workspace_URL": "Введите URL вашего рабочего пространства",
-  "Workspace_URL_Example": "Например, your-company.rocket.chat",
+  "Workspace_URL_Example": "Например, https://chat.avianbrands.com/",
   "This_room_encryption_has_been_enabled_by__username_": "Шифрование для этого чата включено {{username}}",
   "This_room_encryption_has_been_disabled_by__username_": "Шифрование для этого чата выключено {{username}}",
   "Teams": "Команды",

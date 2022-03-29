@@ -764,13 +764,13 @@ class RoomActionsView extends React.Component {
 					showActionIndicator
 				/>
 				<List.Separator />
-				<List.Item
+				{/* <List.Item
 					title='Video_call'
 					onPress={() => RocketChat.callJitsi(room)}
 					testID='room-actions-video'
 					left={() => <List.Icon name='camera' />}
 					showActionIndicator
-				/>
+				/> */}
 				<List.Separator />
 			</List.Section>
 		);

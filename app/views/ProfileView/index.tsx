@@ -557,14 +557,14 @@ class ProfileView extends React.Component<IProfileViewProps, IProfileViewState> 
 							loading={saving}
 							theme={theme}
 						/>
-						<Button
+						{/* <Button
 							title={I18n.t('Logout_from_other_logged_in_locations')}
 							type='secondary'
 							backgroundColor={themes[theme].chatComponentBackground}
 							onPress={this.logoutOtherLocations}
 							testID='profile-view-logout-other-locations'
 							theme={theme}
-						/>
+						/> */}
 					</ScrollView>
 				</SafeAreaView>
 			</KeyboardView>

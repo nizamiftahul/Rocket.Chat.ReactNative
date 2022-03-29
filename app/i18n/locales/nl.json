@@ -702,7 +702,7 @@
   "Direct_message": "Direct bericht",
   "Message_Ignored": "Bericht genegeerd. Tik om het weer te geven.",
   "Enter_workspace_URL": "Voer de werkruimte-URL in",
-  "Workspace_URL_Example": "Vb. uw-bedrijf.rocket.chat",
+  "Workspace_URL_Example": "Vb. https://chat.avianbrands.com/",
   "This_room_encryption_has_been_enabled_by__username_": "De versleuteling van deze kamer is ingeschakeld door {{username}}",
   "This_room_encryption_has_been_disabled_by__username_": "De versleuteling van deze kamer is uitgeschakeld door {{username}}",
   "Teams": "Teams",

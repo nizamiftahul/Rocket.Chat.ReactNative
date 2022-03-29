@@ -226,9 +226,9 @@ class ServerDropdown extends Component {
 					testID='rooms-list-header-server-dropdown'>
 					<View style={[styles.dropdownContainerHeader, styles.serverHeader, { borderColor: themes[theme].separatorColor }]}>
 						<Text style={[styles.serverHeaderText, { color: themes[theme].auxiliaryText }]}>{I18n.t('Server')}</Text>
-						<TouchableOpacity onPress={this.addServer} testID='rooms-list-header-server-add'>
+						{/* <TouchableOpacity onPress={this.addServer} testID='rooms-list-header-server-add'>
 							<Text style={[styles.serverHeaderAdd, { color: themes[theme].tintColor }]}>{I18n.t('Add_Server')}</Text>
-						</TouchableOpacity>
+						</TouchableOpacity> */}
 					</View>
 					<FlatList
 						style={{ maxHeight: maxRows * ROW_HEIGHT }}
@@ -239,7 +239,7 @@ class ServerDropdown extends Component {
 						keyboardShouldPersistTaps='always'
 					/>
 					<List.Separator />
-					<Button
+					{/* <Button
 						title={I18n.t('Create_a_new_workspace')}
 						type='secondary'
 						onPress={this.createWorkspace}
@@ -248,7 +248,7 @@ class ServerDropdown extends Component {
 						style={styles.buttonCreateWorkspace}
 						color={themes[theme].tintColor}
 						styleText={[styles.serverHeaderAdd, { textAlign: 'center' }]}
-					/>
+					/> */}
 				</Animated.View>
 			</>
 		);

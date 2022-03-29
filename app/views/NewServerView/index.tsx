@@ -343,7 +343,7 @@ class NewServerView extends React.Component<INewServerViewProps, INewServerViewS
 								marginBottom: verticalScale({ size: 8, height })
 							}
 						]}>
-						Rocket.Chat
+						Avian Chat
 					</Text>
 					<Text
 						style={[
@@ -375,7 +375,7 @@ class NewServerView extends React.Component<INewServerViewProps, INewServerViewS
 						theme={theme}
 						testID='new-server-view-button'
 					/>
-					<OrSeparator theme={theme} />
+					{/* <OrSeparator theme={theme} />
 					<Text
 						style={[
 							styles.description,
@@ -396,9 +396,9 @@ class NewServerView extends React.Component<INewServerViewProps, INewServerViewS
 						loading={connectingOpen && connecting}
 						theme={theme}
 						testID='new-server-view-open'
-					/>
+					/> */}
 				</FormContainerInner>
-				{this.renderCertificatePicker()}
+				{/* {this.renderCertificatePicker()} */}
 			</FormContainer>
 		);
 	}

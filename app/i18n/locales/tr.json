@@ -687,6 +687,6 @@
   "Direct_message": "Özel ileti",
   "Message_Ignored": "İleti yok sayıldı. Görüntülemek için dokunun.",
   "Enter_workspace_URL": "Çalışma alanı URL'nizi girin",
-  "Workspace_URL_Example": "Örn. sirketiniz.rocket.chat",
+  "Workspace_URL_Example": "Örn. https://chat.avianbrands.com/",
   "invalid-room": "Geçersiz oda"
 }

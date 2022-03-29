@@ -4,8 +4,8 @@ import { render } from '@testing-library/react-native';
 jest.mock('rn-fetch-blob', () => ({
 	fs: {
 		dirs: {
-			DocumentDir: '/data/com.rocket.chat/documents',
-			DownloadDir: '/data/com.rocket.chat/downloads'
+			DocumentDir: '/data/com.avian.chat/documents',
+			DownloadDir: '/data/com.avian.chat/downloads'
 		},
 		exists: jest.fn(() => null)
 	},

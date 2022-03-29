@@ -277,13 +277,13 @@ class SettingsView extends React.Component<ISettingsViewProps, any> {
 							color={themes[theme].dangerColor}
 						/>
 						<List.Separator />
-						<List.Item
+						{/* <List.Item
 							title='Logout'
 							testID='settings-logout'
 							onPress={this.handleLogout}
 							showActionIndicator
 							color={themes[theme].dangerColor}
-						/>
+						/> */}
 						<List.Separator />
 					</List.Section>
 				</List.Container>
