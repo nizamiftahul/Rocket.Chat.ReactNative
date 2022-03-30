@@ -352,7 +352,7 @@ class RoomInfoView extends React.Component {
 		return (
 			<View style={styles.roomButtonsContainer}>
 				{this.renderButton(this.goRoom, 'message', I18n.t('Message'))}
-				{jitsiEnabled && this.isDirect ? this.renderButton(this.videoCall, 'camera', I18n.t('Video_call')) : null}
+				{/* {jitsiEnabled && this.isDirect ? this.renderButton(this.videoCall, 'camera', I18n.t('Video_call')) : null} */}
 			</View>
 		);
 	};
