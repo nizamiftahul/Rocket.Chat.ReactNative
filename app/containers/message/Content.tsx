@@ -14,7 +14,7 @@ import { E2E_MESSAGE_TYPE } from '../../lib/encryption/constants';
 import { IMessageContent } from './interfaces';
 
 const Content = React.memo(
-	(props: IMessageContent) => {
+	(props: IMessageContent & { author: any }) => {
 		if (props.isInfo) {
 			// @ts-ignore
 			const infoMessage = getInfoMessage({ ...props });
@@ -87,7 +87,12 @@ const Content = React.memo(
 			content = <Text style={[styles.textInfo, { color: themes[props.theme].auxiliaryText }]}>{I18n.t('Message_Ignored')}</Text>;
 		}
 
-		return <View style={props.isTemp && styles.temp}>{content}</View>;
+		const { user } = useContext(MessageContext);
+		return (
+			<View style={[props.isTemp && styles.temp, user.id === props.author._id && { flexDirection: 'row-reverse' }]}>
+				{content}
+			</View>
+		);
 	},
 	(prevProps, nextProps) => {
 		if (prevProps.isTemp !== nextProps.isTemp) {

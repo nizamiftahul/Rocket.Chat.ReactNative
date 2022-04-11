@@ -63,15 +63,22 @@ const MessageInner = React.memo((props: IMessageInner) => {
 MessageInner.displayName = 'MessageInner';
 
 const Message = React.memo((props: IMessage) => {
+	const { user } = useContext(MessageContext);
+	// if (user.id === props.author._id) alert(props)
 	if (props.isThreadReply || props.isThreadSequential || props.isInfo || props.isIgnored) {
 		const thread = props.isThreadReply ? <RepliedThread {...props} /> : null;
 		return (
 			<View style={[styles.container, props.style]}>
 				{thread}
-				<View style={styles.flex}>
+				<View style={[styles.flex, user.id === props.author._id && { flexDirection: 'row-reverse' }]}>
 					{/* @ts-ignore */}
 					<MessageAvatar small {...props} />
-					<View style={[styles.messageContent, props.isHeader && styles.messageContentWithHeader]}>
+					<View
+						style={[
+							styles.messageContent,
+							user.id === props.author._id ? { marginRight: 46 } : { marginLeft: 46 },
+							props.isHeader && (user.id === props.author._id ? { marginRight: 10 } : { marginLeft: 10 })
+						]}>
 						<Content {...props} />
 					</View>
 				</View>
@@ -81,10 +88,15 @@ const Message = React.memo((props: IMessage) => {
 
 	return (
 		<View style={[styles.container, props.style]}>
-			<View style={styles.flex}>
+			<View style={[styles.flex, user.id === props.author._id && { flexDirection: 'row-reverse' }]}>
 				{/* @ts-ignore */}
 				<MessageAvatar {...props} />
-				<View style={[styles.messageContent, props.isHeader && styles.messageContentWithHeader]}>
+				<View
+					style={[
+						styles.messageContent,
+						user.id === props.author._id ? { marginRight: 46 } : { marginLeft: 46 },
+						props.isHeader && (user.id === props.author._id ? { marginRight: 10 } : { marginLeft: 10 })
+					]}>
 					<MessageInner {...props} />
 				</View>
 				<ReadReceipt isReadReceiptEnabled={props.isReadReceiptEnabled} unread={props.unread} theme={props.theme} />

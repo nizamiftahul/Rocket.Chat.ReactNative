@@ -90,7 +90,7 @@ const User = React.memo(
 			}
 
 			return (
-				<View style={styles.container}>
+				<View style={[styles.container, user.id === author?._id && { flexDirection: 'row-reverse' }]}>
 					<TouchableOpacity style={styles.titleContainer} onPress={onUserPress} disabled={isDisabled}>
 						<Text style={[styles.username, { color: themes[theme].titleText }]} numberOfLines={1}>
 							{textContent}
